@@ -6,9 +6,9 @@ function NewPlantForm({ onAddPlant }) {
   const [image, setImage] = useState("");
   const [price, setPrice] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    onAddPlant({ name, image, price });
+    await onAddPlant({ name, image, price });
     setName("");
     setImage("");
     setPrice("");
