@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";  
+
 
 function NewPlantForm({ onAddPlant }) {
   const [name, setName] = useState("");
